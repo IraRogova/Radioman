@@ -20,6 +20,14 @@ public class Radio {
         this.currentRadioStation = currentRadioStation;
     }
 
+    public int getFirstRadioStation() {
+        return firstRadioStation;
+    }
+
+    public int getLastRadioStation() {
+        return lastRadioStation;
+    }
+
     public void changeNextRadioStation() {
         if (currentRadioStation == lastRadioStation) {
             this.currentRadioStation = firstRadioStation;
@@ -58,6 +66,15 @@ public class Radio {
             return;
         this.currentSoundVolume = currentSoundVolume;
     }
+
+    public int getMinSoundVolume() {
+        return minSoundVolume;
+    }
+
+    public int getMaxSoundVolume() {
+        return maxSoundVolume;
+    }
+
 
 }
 
